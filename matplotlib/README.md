@@ -17,6 +17,7 @@
 | df['col'].corr(df['col2'])                             | correlation between col and col2               |
 | tight_layout                                           | Clean the layout                               |
 | plt.figure(figsize=(15,5))                             | Set the figure size                            |
+| plt.imshow(X_train[0],cmap='gray')                     | show the provided matrix as an image.          |
 
 ```python
 # Subplots
