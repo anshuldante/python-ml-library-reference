@@ -1,5 +1,7 @@
 # Seaborn Reference
 
+![SNS plots classification and usage](images/sns_plots_classification.png)
+
 | Method                                                                               | Description                                                                                                       |
 | ------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------- |
 | sns.boxplot(x='target',y='thalach', data=df)                                         | box plot                                                                                                          |
@@ -21,6 +23,11 @@
 | train['Fare'].nlargest(10).plot(kind='bar', title = '10 largest Fare')               | 10 largest values of fare                                                                                         |
 | train['Age'].nsmallest(10).plot(kind='bar', color = ['#A83731','#AF6E4D'])           | 10 smallest values of age.                                                                                        |
 | sns.catplot(x=col, y='Survived', data=conti, kind='point', aspect=3,)                | Point estimates and confidence intervals using scatter plot glyphs                                                |
+| sns.lineplot(data=spotify_data)                                                      | basic line plot                                                                                                   |
+| sns.barplot(x=flight_data.index, y=flight_data['NK'])                                | basic bar plot                                                                                                    |
+| sns.jointplot(x=iris_data['Petal Length'], y=iris_data['Sepal Width'], kind="kde")   | 2D KDE plot                                                                                                       |
+| sns.kdeplot(data=iris_data['Petal Length (cm)'], shade=True)                         | KDE plot                                                                                                          |
+| sns.set_style("dark")                                                                | change theme to dark. the options are: (1)"darkgrid", (2)"whitegrid", (3)"dark", (4)"white", and (5)"ticks"       |
 
 ```python
 # Draw a box plot to show Age distributions with respect to survival status.
