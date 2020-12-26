@@ -52,6 +52,8 @@
 | reviews.points.astype('float64')                                                      | change the data type of a column                                            |
 | reviews.rename(columns={'points': 'score'})                                           | rename columns                                                              |
 | scatter_matrix(df['Age','Height','Weight], figsize=(12, 8))                           | Draws a matrix of scatter plots                                             |
+| copy_df = df.copy()                                                                   | creates a true independent copy of the dataframe.                           |
+| train_df.reindex(np.random.permutation(train_df.index))                               | random shuffle and re-index                                                 |
 
 ```python
 # Different ways to create dataframes from raw data.
